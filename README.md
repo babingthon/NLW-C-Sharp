@@ -12,7 +12,7 @@ API desenvolvida para sistema de Leilão Online.
 
 ## Run Locally
 
-Clone this project, you'll also need the backend: https://github.com/vinigouvea16/upload-ai-api
+Clone this project, you'll also need the backend: https://github.com/babingthon/NLW-C-Sharp.git
 
 ```bash
   git clone https://github.com/babingthon/NLW-C-Sharp.git
