@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RocketSeatAuction.API.Entities;
+using RocketSeatAuction.API.Filters;
 using RocketSeatAuction.API.UseCases.Auctions.GetCurrent;
 
 namespace RocketSeatAuction.API.Controllers;
 
-[Route("[controller]")]
-[ApiController]
-public class AuctionController : ControllerBase
+[ServiceFilter(typeof(AuthenticationUserAttribute))]
+public class AuctionController : RocketSeatAuctionBaseController
 {
     [HttpGet]
     [ProducesResponseType(typeof(Auction), StatusCodes.Status200OK)]
@@ -24,4 +24,3 @@ public class AuctionController : ControllerBase
     }
 
 }
-
