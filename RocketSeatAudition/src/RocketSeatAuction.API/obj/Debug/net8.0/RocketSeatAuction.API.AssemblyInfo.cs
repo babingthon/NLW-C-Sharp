@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RocketSeatAuction.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab08e7e944c8ed18d43a8d30f2e7d66bd9dbe8ed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43689a126ef12614e2643ca2d4104976f0f12fd7")]
 [assembly: System.Reflection.AssemblyProductAttribute("RocketSeatAuction.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RocketSeatAuction.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

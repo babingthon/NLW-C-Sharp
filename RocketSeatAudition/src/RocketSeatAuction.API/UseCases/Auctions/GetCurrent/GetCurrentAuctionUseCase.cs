@@ -1,19 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RocketSeatAuction.API.Contracts;
 using RocketSeatAuction.API.Entities;
 using RocketSeatAuction.API.Repositories;
+using System.Reflection.Metadata.Ecma335;
 
 namespace RocketSeatAuction.API.UseCases.Auctions.GetCurrent;
 
 public class GetCurrentAuctionUseCase
 {
-    public Auction Execute()
+    private readonly IAuctionRepository _repository;
+    public GetCurrentAuctionUseCase(IAuctionRepository repository) => _repository = repository;
+    public Auction? Execute()
     {
-        var repository = new RocketSeatAuctionDbContext();
-
-        return repository
-            .Auctions
-            .Include(auction => auction.Items)
-            .First(); 
-              
+        return _repository.GetCurrent();
     }
+    
 }
